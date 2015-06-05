@@ -7,17 +7,12 @@
   src: url('../assets/fonts/SofiaProLight.otf');
 }
 html, body {
+  height: 100%;
   margin: 0;
   font-family: 'Adam', sans-serif;
-  background-image: linear-gradient(to bottom, rgba(64, 64, 64, 0.3) 0%, rgba(64, 64, 64, 0.3) 100%), url('../assets/images/mac1.jpeg');
-  background-position: left;
+  background-image: url('../assets/images/mac1.jpeg');
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   /*background: linear-gradient( to bottom,#333333, #4b4b4b);*/
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    background-position: center;
-    background-size: 100%;
-  }
 }

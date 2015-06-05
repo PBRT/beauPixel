@@ -1,9 +1,11 @@
+var compression = require('compression');
 var debug = require('debug')('beaupixel:server');
 var http = require('http');
 var express = require('express');
 var favicon = require('serve-favicon');
 var app = express();
 
+app.use(compression());
 app.use(favicon(__dirname + '/assets/images/favico.ico'));
 
 if (app.get('env') === 'development') {
